@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fist Aid Course</title>
+    <link rel="stylesheet" href="six-month-course.css">
+</head>
+<body>
+    <footer>
+    <header>
+        
+        <nav class="navbar">
+        
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="About-Us.html">About-Us</a></li>
+                <li><a href="six-week-course.html">6-Week Courses</a></li>
+                <li><a href="six-month-course.html" class="active">6-Month Courses</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        </nav>
+        <div class="fas fa-bars"></div>
+    </header>
+    </footer>
+
+    
+<section class="first-aid">
+    <h2>Course Overview</h2>
+    <h3>First Aid</h3>
+    <p><strong>Fees:</strong> R1500</p>
+    <p><strong>Purpose:</strong> To provide first aid awareness and basic life support.</p>
+    <h3>Content:</h3>
+    <ul>
+        Wounds and bleeding</li>
+        <li>Burns and fractures</li>
+        <li>Emergency scene management</li>
+        <li>Cardio-Pulmonary Resuscitation (CPR)</li>
+        <li>Respiratory distress e.g., Choking, blocked airway</li>
+    </ul>
+</section>
+
+<section class="sewing">
+    <h2>Course Overview</h2>
+    <h3>Sewing</h3>
+    <p><strong>Fees:</strong> R1500</p>
+    <p><strong>Purpose:</strong> To provide alterations and new garment tailoring services.</p>
+    <h3>Content:</h3>
+    <ul>
+        <li>Types of stitches</li>
+        <li>Threading a sewing machine</li>
+        <li>Sewing buttons, zips, hems and seams</li>
+        <li>Alterations</li>
+        <li>Designing and sewing new garments</li>
+    </ul>
+</section>
+
+<section class="landscaping">
+    <h2>Course Overview</h2>
+    <h3>Landscaping</h3>
+    <p><strong>Fees:</strong> R1500</p>
+    <p><strong>Purpose:</strong> To provide landscaping services for new and established gardens.</p>
+    <h3>Content:</h3>
+    <ul>
+        <li>Indigenous and exotic plants and trees</li>
+        <li>Fixed structures (fountains, statues, benches, tables, built-in braai) </li>
+        <li>Balancing of plants and trees in a garden</li>
+        <li>Aesthetics of plant shapes and colours</li>
+        <li>Garden layout</li>
+    </ul>
+</section>
+
+<section class="life skills">
+    <h2>Course Overview</h2>
+    <h3>Life Skills</h3>
+    <p><strong>Fees:</strong> R1500</p>
+    <p><strong>Purpose:</strong> To provide skills  to navigate basic life necessities.</p>
+    <h3>Content:</h3>
+    <ul>
+        <li>Opening a bank account</li>
+        <li>Basic labour law (know your rights)</li>
+        <li>Basic reading and writing literacy</li>
+        <li>Basic numeric literacy</li>
+    </ul>
+</section>
+
+<section id="enroll"></section>
+    <h2>Enroll to a Desired Course</h2>
+    <form id="enroll-form">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="surname" placeholder="Surname" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="tel" id="cellphone" placeholder="Cellphone Number" required>
+        
+
+        <p id="feedbackMessage"></p>
+        <button onclick="enrollCourse()">Enroll to Course</button>
+    </form>
+</section>
+
+
+
+
+<section id="calculator">
+    <h2>Course Fee Calculator</h2>
+    <p>Select the courses you want to calculate total fees:</p>
+    <label><input type="checkbox" class="course" value="1500"> First Aid (R1500)</label><br>
+    <label><input type="checkbox" class="course" value="1500"> Sewing (R1500)</label><br>
+    <label><input type="checkbox" class="course" value="1500"> Landscaping (R1500)</label><br>
+    <label><input type="checkbox" class="course" value="1500"> Life Skills (R1500)</label><br>
+    <button onclick="calculateTotal()">Calculate Total</button>
+    <p id="total"></p>
+
+    
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="home.js"></script>
+<script src="script.js"></script>
+    
+</body>
+</html>
+
+
+

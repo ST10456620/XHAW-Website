@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course selection</title>
+    <link rel="stylesheet" href="courseselection.css">
+</head>
+<body>
+    <section class="search-screen">
+        <button class="close-button">X</button>
+        <input type="text" placeholder="Search course" class="search-bar">
+        <div class="duration">
+            <button class="duration-button active" onclick="filterCourses('6-months')">6 months</button>
+            <button class="duration-button" onclick="filterCourses('6-weeks')">6 weeks</button>
+        </div>
+        <div class="course-list">
+            <button class="course-button" onclick="selectCourse('first-aid')">First Aid</button>
+            <button class="course-button" onclick="selectCourse('sewing')">Sewing</button>
+            <button class="course-button" onclick="selectCourse('landscaping')">Landscaping</button>
+            <button class="course-button" onclick="selectCourse('life-skills')">Life Skills</button>
+        </div>
+    </section>
+    
+    <script>
+        function selectCourse(course) {
+            // Redirect to the course details page with the selected course
+            window.location.href = 'course-details.html?course=' + course;
+        }
+
+        function filterCourses(duration) {
+            alert('Filtering courses by: ' + duration);
+            // Here you can implement course filtering logic
+        }
+        
+    </script>
+</body>
+</html>

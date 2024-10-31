@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailedscreen</title>
+    <link rel="stylesheet" href="detailscreen.css">
+</head>
+<body>
+    <section class="details-screen">
+        <div class="image-placeholder"></div>
+        <p id="course-title" class="course-price">Price of course</p>
+        <div class="course-content">
+            <p id="course-content-text">Course content</p>
+            <div class="content-placeholder"></div>
+        </div>
+        <button class="enroll-button">Enroll into course</button>
+    </section>
+    
+    <script>
+        // Get the course parameter from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const course = urlParams.get('course');
+
+        // Function to display course details based on selection
+        function displayCourseDetails(course) {
+            const courseTitle = document.getElementById('course-title');
+            const courseContent = document.getElementById('course-content-text');
+
+            switch (course) {
+                case 'first-aid':
+                    courseTitle.textContent = "First Aid Course - Price: R1500";
+                    courseContent.textContent = "This course covers basic first aid practices.";
+                    break;
+                case 'sewing':
+                    courseTitle.textContent = "Sewing Course - Price: R1500";
+                    courseContent.textContent = "Learn sewing techniques and garment construction.";
+                    break;
+                case 'landscaping':
+                    courseTitle.textContent = "Landscaping Course - Price: R1500";
+                    courseContent.textContent = "This course covers landscaping design and maintenance.";
+                    break;
+                case 'life-skills':
+                    courseTitle.textContent = "Life Skills Course - Price: R1500";
+                    courseContent.textContent = "A course focused on essential life skills.";
+                    break;
+                default:
+                    courseTitle.textContent = "Unknown Course";
+                    courseContent.textContent = "Please select a valid course.";
+                    break;
+            }
+        }
+
+        // Display course details when the page loads
+        window.onload = function () {
+            displayCourseDetails(course);
+        }
+    </script>
+</body>
+</html>

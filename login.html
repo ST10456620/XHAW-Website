@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in screen</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+        <section class="login-screen">
+            <div class="image-placeholder"></div>
+            <input type="email" id="emailInput" placeholder="Enter your email" class="login-input">
+            <button class="login-button" onclick="login()">Login</button>
+            <p class="help-text">Help logging in</p>
+            <button class="social-login facebook">Login with Facebook</button>
+            <button class="social-login google">Login with Google</button>
+        </section>
+    
+        <script>
+            function login() {
+                const email = document.getElementById('emailInput').value;
+                if (email === "") {
+                    alert('Please enter your email');
+                } else {
+                    // Redirect to course selection if login is successful
+                    window.location.href = 'courses.html';
+                }
+            }
+
+        </script>
+    </body>
+    
+    </html>
+
+</body>
+</html>

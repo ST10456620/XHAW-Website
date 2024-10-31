@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header class="logo">
+    
+        <img src = "assets/logo22.jpg" width="100" height="120">
+    <nav class="navbar">
+    <ul>
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="About-Us.html">About-Us</a></li>
+        <li><a href="six-month-course.html">6-Month Courses</a></li>
+        <li><a href="six-week-course.html">6-Week Courses</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+    </ul>
+    </nav>
+
+    <div class="fas fa-bars"></div>
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="content">
+        <h1>Empowering The Nation</h1>
+            <p>
+                A non-profit organization committed to equipping individuals with the skills needed to improve their personal and
+                professional lives. We believe that education and practical training are key to building stronger communities and
+                empowering individuals to lead independent, fulfilling lives.<br>Through our accessible courses, we aim to bridge skill
+                gaps and offer opportunities for those seeking personal and career development.
+            </p>
+            <a href="About-Us.html"><button>Discover more</button></a>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="6 month course"></i>
+                <h3>6 Month Course</h3>
+                <p>Our mission is to uplift underprivileged communities by providing access to affordable, practical training in essential
+                life skills.<br> We aim to help individuals become self-sufficient and capable of contributing meaningfully to their
+                families and communities.</p><br>
+                <a href="six-month-course.html"><button>Discover more</button></a>
+            </div>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="6 week course"></i>
+                <h3>6 Week Course</h3>
+                <p>Our mission is to uplift underprivileged communities by providing access to affordable, practical training in
+                        essential
+                        life skills.<br> We aim to help individuals become self-sufficient and capable of contributing meaningfully
+                        to their
+                        families and communities.</p><br>
+                        <a href="six-week-course.html"><button>Discover more</button></a>
+            </div> 
+        </section>
+
+
+
+        <section class="mission">
+            <h1>Our Mission</h1>
+            <p>
+            Our mission is to uplift underprivileged communities by providing access to affordable, practical training in essential
+            life skills.<br> We aim to help individuals become self-sufficient and capable of contributing meaningfully to their
+            families and communities.
+            </p>
+        </section>
+        <section class="vision">
+            <h2>Our Vision</h2>
+            <p>
+                We envision a future where everyone has the knowledge and skills they need to succeed in life, no matter their
+                background.<br>By offering hands-on training in areas like First Aid, Landscaping, Life Skills, and more, we empower people
+                to take control of their futures.
+            </p>
+        </section>
+        <section class="values">
+            <h2> Our Core Values</h2>
+            <ul>
+                Accessibility: We are committed to making education and training available to everyone, regardless of financial status.<br>
+                Community: We focus on improving the well-being of the communities we serve.<br>
+                Empowerment: We give people the tools to improve their own lives.<br>
+                Integrity: We operate with transparency and accountability, ensuring that our work directly benefits those in need.<br>
+                Sustainability: Our training programs promote sustainable practices that benefit both individuals and the environment.<br>
+            </ul>
+        </section>
+    </section>
+    
+
+    <section id="whyChooseUs">
+        <h2>Why Choose Empowering The Nation</h2>
+        <p>
+            <ul>
+                Affordable Courses: We offer a range of practical, short-term courses that are affordable, with fees ranging from R750
+                to R1500.<br> This ensures that financial barriers don’t stand in the way of learning.<br>
+                Practical Skills: All of our courses are designed to equip you with hands-on skills that can be immediately applied to
+                real-life situations, whether at home or in the workplace.<br>
+                Experienced Trainers: Our instructors are experienced professionals in their respective fields, ensuring that you
+                receive high-quality, practical education.<br>
+                Flexible Learning Options: Our courses range from six-week short courses to six-month in-depth training programs,
+                allowing you to choose the option that best suits your schedule and needs.<br>
+
+            </ul>
+        </p>
+    </section>
+    <section id="getInvolved">
+        <h2>Get Involved</h2>
+        <ul>
+            Enroll in Our Courses: Whether you are looking to gain new skills or improve existing ones, our courses are designed for
+            you.<br>
+            Donate: Help us continue to provide affordable education by donating to support our cause. Every contribution makes a
+            difference.<br>
+            Volunteer: Join our team of dedicated volunteers and help us deliver impactful training to communities.<br>
+            Partner with Us: We are always looking to collaborate with businesses and organizations that share our vision for
+            empowering communities through education.<br>
+        </ul>
+    </section>
+
+    <section id="calculator">
+        <h2>Course Fee Calculator</h2>
+        <p>Select the courses you want to calculate total fees:</p>
+        <label><input type="checkbox" class="course" value="1500"> First Aid (R1500)</label><br>
+        <label><input type="checkbox" class="course" value="1500"> Sewing (R1500)</label><br>
+        <label><input type="checkbox" class="course" value="1500"> Landscaping (R1500)</label><br>
+        <label><input type="checkbox" class="course" value="1500"> Life Skills (R1500)</label><br>
+        <label><input type="checkbox" class="course" value="750"> Child Minding (R750)</label><br>
+        <label><input type="checkbox" class="course" value="750"> Cooking (R750)</label><br>
+        <label><input type="checkbox" class="course" value="750"> Garden Maintenance (R750)</label><br>
+        <button onclick="calculateTotal()">Calculate Total</button>
+        <p id="total"></p>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="stats">
+                <div class="stat-item">
+                    <i class="fas fa-thumbs-up"></i>
+                    <h2>523</h2>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-hourglass-half"></i>
+                    <h2>4</h2>
+                    <p>Years in Business</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-award"></i>
+                    <h2>2</h2>
+                    <p>Award Nominations</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-trophy"></i>
+                    <h2>150</h2>
+                    <p>Employees Trained</p>
+                </div>
+            </div>
+        
+        
+        
+            <div class="testimonial-section">
+                <h2 style="color:blue">Let's Hear What Clients Say</h2>
+                <div class="testimonial">
+                    <img src="assets/gogo.jpg" alt="Client Testimonial">
+                    <p style="color: black">Aug 2024: "I finished my course yesterday (First Aid and Child minding). This is the best programm that
+                        ive attended " <br> - Gomolemo from Katlehong</p>
+                </div>
+            </div>
+        
+    </section>
+
+    
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="home.js"></script>
+    <script src="script.js"></script>
+
+    <section id="youtube-video">
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/71uygmhHdc0?si=mdD3CZHRKi3dCIRp"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/f2_oj5toBlI?si=oKZgZFQ5G89seWPr"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/B2iR14mIHyc?si=M1n5TRlPneRAAGo8" 
+                            title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+<div class="google-review">
+    <div class="review-header">
+
+        <img src = "assets/chrome2.png" align= left width="50" height="120">
+
+
+        <h3>5-Star Google Reviews</h3>
+    </div>
+
+    <div class="review">
+        <p>" Highly recommended!"</p>
+        <span>⭐⭐⭐⭐⭐</span>
+        <p>- Senzo Mavundla</p>
+    </div>
+
+    <div class="review">
+        <p>" Will definitely be coming back for more courses because of the discount they offer"</p>
+        <span>⭐⭐⭐⭐⭐</span>
+        <p>- Ofentse Lebethe</p>
+    </div>
+
+    <div class="review">
+        <p>"The best training school you could choose from. I know more about my right as a domestic worker."</p>
+        <span>⭐⭐⭐⭐⭐</span>
+        <p>-Zanele Thwala</p>
+    </div>
+
+    
+</div>
+
+
+
+<footer>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg" alt="South African Flag"
+        width="20" height="30">
+
+    <p>&copy;2024 Empowering The Nation. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
